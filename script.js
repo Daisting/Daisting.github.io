@@ -1,3 +1,9 @@
+function sayHello(){
+  var response1 = prompt("What is your name?");
+  alert("Dear " + response1 + ",I feel honored to be your guide,you will meet a big question,please use your wisdom to solve it.");
+}
+sayHello()
+
 function writeAnswer(){
   var response = prompt("who is the killer?");
   if (response == "王奇"){
