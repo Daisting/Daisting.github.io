@@ -1,22 +1,241 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>murder</title>
-</head>
-<body background="柯南.jpg">
-    <h1 style="background-color:lavender;padding:10px;text-align:left"> A MURDER</h1>
-    <h2 style="text-align:left">You are a famous detective,today you witnessed a murder,<br>please help the police to identify who the killer is and write<br>his or her name in the blank place below.</h2>
+<!doctype html>
+<html lang="en">
+ <head>
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- Bootstrap CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <img style="padding:20px" src="现场.jpg" width="300" height="300" >
-  <img style="padding:20px" src="嫌疑人A.jpg" width="300" height="300"><br>
-  <img style="padding:20px" src="嫌疑人B.jpg" width="300" height="300">
-  <img style="padding:20px" src="嫌疑人C.jpg" width="300" height="300"><br>
-
-  <script src="script.js"></script>
-
-  <br><button style="padding:20px;button-align:center;margin-left:20px" type="button" onclick="writeAnswer()"> Please write your answer by click me</button>
-  <button style="padding:20px;button-align:center;margin-left:50px" type="button" onclick="checkAnswer()">You can see all the truth by click me</button>
-
-</body>
-</html>
+    <title>DELICACY</title>
+  </head>
+  <body>
+<!--navigation-->
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">DELICACY</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">Share</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Connect</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--junbotron-->
+<div class="container-fluid">
+ <br><br><br><h2 class="bg-warning p-2 text-white text-center bg-opacity-75">Welcome to DELICACY</h2>
+ <div class="bg-warning p-2 text-black-50 text-center bg-opacity-25">Please enjoy youerself by appreciating delicious food which perfect in color,aroma and taste here.
+   <br>Also,we will provide you with the necessary materials and methods of delicioues food.
+   <br>hope you will feel happy and relaxed in the process of cooking.
+</div>
+ <div class="container-fluid">
+ <div class="row text-center">
+ <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 bg-warning p-2 text-white bg-opacity-50">Puppy bread</div>
+ <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 bg-warning p-2 text-white bg-opacity-75">Cup cake</div>
+ <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 bg-warning p-2 text-white bg-opacity-50">Fruit platter</div>
+ </div>
+ </div>
+</div>
+</div>
+<!--carousel-->
+<br>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/puppy.jpg" class="d-block w-100">
+      <div class="carousel-caption">
+        <h1 class="display-1">DELICACY<h1>
+          <h3>You can enjoy yourself here</h3>
+          <button type="button" class="btn btn-outline-light btn-lg">View DEMO</button>
+          <button type="button" class="btn btn-outline-light btn-lg">Get Started</button>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/cake.jpg" class="d-block w-100">
+      <div class="carousel-caption">
+        <h1 class="display-1">DELICACY<h1>
+          <h3>You can enjoy yourself here</h3>
+          <button type="button" class="btn btn-outline-light btn-lg">View DEMO</button>
+          <button type="button" class="btn btn-outline-light btn-lg">Get Started</button>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/fruit.jpg" class="d-block w-100">
+      <div class="carousel-caption">
+        <h1 class="display-1">DELICACY<h1>
+          <h3>You can enjoy yourself here</h3>
+          <button type="button" class="btn btn-outline-light btn-lg">View DEMO</button>
+          <button type="button" class="btn btn-outline-light btn-lg">Get Started</button>
+        </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--Log in-->
+<br>
+ <div class="container-fluid">
+ <div class="row text-center">
+ <h5 class="bg-warning p-2 text-black-50 bg-opacity-50">If you are willing to join us<br>Please register and log in below.</h5>
+ </div>
+ </div>
+ <br>
+ <div class="form-floating mb-3">
+  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput">Email address</label>
+</div>
+<div class="form-floating">
+  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+  <label for="floatingPassword">Password</label>
+</div>
+<div class="d-grid gap-2 col-6 mx-auto">
+  <br><button class="btn btn-outline-warning btn-lg text-black-50" type="button">Register/Log in</button><br>
+</div>
+<!--Community-->
+</div>
+ <div class="container-fluid">
+ <div class="row text-center">
+ <h5 class="bg-warning p-2 text-black-50 bg-opacity-50">You can learn how to cook delicious food here.<br>Wish you enjoy!</h5>
+ </div>
+ </div>
+<!--card-->
+<div class="row">
+  <div class="col-md-3 col-lg-3 col-xl-3">
+    <div class="card" style="width: 20rem;">
+      <img src="img/food1.jpg" class="card-img-top">
+      <div class="card-body">
+        <p class="card-text">食材:<br>柠檬汁30g,水80g,凉粉5g,代糖30g<br>做法:<br>1.柠檬用盐戳洗干净对半切开，取出果肉，压出果汁，过滤出果汁<br>2.在柠檬汁里+代糖+80g纯净水+凉粉搅匀倒锅里至着沸腾<br>3.倒入柠檬皮放冰箱冷藏一小时凝固切块完成</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-lg-3 col-xl-3">
+    <div class="card" style="width: 20rem;">
+      <img src="img/food2.jpg" class="card-img-top">
+      <div class="card-body">
+        <p class="card-text">食材:<br>芋泥100g,鸡蛋2个,牛奶20g,肉松,玉米淀粉<br>做法:<br>1.鸡蛋加20克牛奶和一勺淀粉搅匀，倒入预热的平底锅煎成蛋皮<br>2.蛋皮涂抹厚厚的芋泥，铺上肉松<br>3.将蛋皮卷起来，用刀切开，表面挤沙拉酱番茄酱，撒上肉松</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-lg-3 col-xl-3">
+    <div class="card" style="width: 20rem;">
+      <img src="img/food3.jpg" class="card-img-top">
+      <div class="card-body">
+        <p class="card-text">食材:<br>淡奶油,草莓,猕猴桃,吐司<br>做法：<br>1:猕猴桃切两侧带弧度的片做叶子以及最中间那片做梗<br>2.草莓的顶部切成小山状<br>3.把淡奶油打发干一点，抹在吐司上，加两片叶子中间放梗<br>4.把水果铺满奶油，放冰箱冷藏半小时</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-lg-3 col-xl-3">
+    <div class="card" style="width: 20rem;">
+      <img src="img/food4.jpg" class="card-img-top">
+      <div class="card-body">
+        <p class="card-text">食材:<br>鸡蛋4个,可可粉15g(红丝绒液8g),牛奶60g,玉米油55g,砂糖45g,柠檬汁<br>做法:<br>1.牛奶+玉米油搅拌乳化筛入低筋面粉搅匀,加两个蛋黄搅拌均匀备用<br>2.蛋白＋柠檬汁和糖打发至冒尖，加入面糊搅拌均匀，放进烤箱160度30分钟，晾凉抹一层奶油卷起来放冰箱冷藏1小时</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Accordion-->
+<br>
+<div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        Dessert recommended this week
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+      <div class="accordion-body">
+        These are the most popular desserts on our website this week——<strong> Banana French toast,Cream shufrey and Sidos!</strong>
+        <br>
+        <img src="img/food5.jpg" style="width:20rem;">
+        <img src="img/food6.jpg" style="width:20rem;">
+        <img src="img/food7.jpg" style="width:20rem;">
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        Daily breakfast recommendation
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+      <div class="accordion-body">
+        We recommend three high-value breakfasts with different flavors——<strong> Lobster rolls with garlic,Egg sandwich and Fried dumplings!</strong>
+        <br>
+        <img src="img/food8.jpg" style="width:20rem;">
+        <img src="img/food9.jpg" style="width:20rem;">
+        <img src="img/food10.jpg" style="width:20rem;">
+      </div>
+    </div>
+  </div>
+</div>
+<!--Connect-->
+<br>
+<footer>
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col-md-4 bg-warning p-2 bg-opacity-50">
+        <hr class="light">
+        <h5>Our services</p>
+        <hr class="light">
+        <p>share with others</p>
+        <p>food ranking</p>
+        <p>cook methods</p>
+      </div>
+      <div class="col-md-4 bg-warning p-2 bg-opacity-25">
+        <hr class="light">
+        <h5>DELICACY</h5>
+        <hr class="light">
+        <p>173-7943-2217</p>
+        <p>email.delicacy.com</p>
+        <p>City.State.000000</p>
+      </div>
+      <div class="col-md-4 bg-warning p-2 bg-opacity-50">
+        <hr class="light">
+        <h5>Location</p>
+        <hr class="light">
+        <p>City.State.000000</p>
+        <p>City.State.000000</p>
+        <p>City.State.000000</p>
+      </div>
+      </div>
+     </div>
+    </div>
+  </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/
+   IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-
+   QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    </body>
+   </html>
